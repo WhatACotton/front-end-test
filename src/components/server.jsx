@@ -1,6 +1,6 @@
 const IPAdress = "192.168.102.196";
 
-const signUpToServer = async (idToken) => {
+const SignUpToServer = async (idToken) => {
   try {
     console.log(idToken);
     const response = await fetch("http://" + IPAdress + ":80/go/SignUp", {
@@ -18,7 +18,7 @@ const signUpToServer = async (idToken) => {
     console.log(error);
   }
 };
-const signInToServer = async (idToken) => {
+const SignInToServer = async (idToken) => {
   try {
     console.log(idToken);
     const response = await fetch("http://" + IPAdress + ":80/go/Login", {
@@ -36,4 +36,4 @@ const signInToServer = async (idToken) => {
     console.log(error);
   }
 };
-export { signUpToServer, signInToServer };
+export { SignUpToServer, SignInToServer };
